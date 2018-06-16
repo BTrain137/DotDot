@@ -29,13 +29,13 @@ set smarttab
 set copyindent
 set preserveindent
 
-" NERDTREE 
+" NERDTREE
 autocmd vimenter * NERDTree               " Autoload NERDTREE with vim
 autocmd VimEnter * wincmd p               " Curser start on file
+let NERDTreeShowHidden=1                  " Show hidden files in NERDTree
+let g:NERDTreeDirArrowExpandable = '▸'    " Show directory
+let g:NERDTreeDirArrowCollapsible = '▾'   " Show current directory open
 map <C-n> :NERDTreeToggle<CR>             " Map NERDTREE to ctr
-let NERDTreeShowHidden=1.                 " Show hidden files in NERDTree
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
 
 " Close NERDTREE when the last editor closes
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
