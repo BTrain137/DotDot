@@ -1,4 +1,4 @@
-" Plugins will be downloaded under the specified directory.
+" :PlugInstall
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
