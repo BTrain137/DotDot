@@ -15,14 +15,14 @@ Plug 'vim-airline/vim-airline'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-set termguicolors             " iterm2 color
+set termguicolors                         " iterm2 color
 syntax on
 colorscheme sublimemonokai
 
-set number                    " numbers to the left
-set expandtab ts=4 sw=4 ai    " tab spaces
-set cursorline                " highlights current line and number
-set spelllang=en              " spell check
+set number                                " numbers to the left
+set expandtab ts=4 sw=4 ai                " tab spaces
+set cursorline                            " highlights current line and number
+set spelllang=en                          " spell check
 
 " test
 set smarttab
@@ -30,10 +30,12 @@ set copyindent
 set preserveindent
 
 " NERDTREE 
-autocmd vimenter * NERDTree   " Autoload NERDTREE with vim
-autocmd VimEnter * wincmd p   " Curser start on file
-map <C-n> :NERDTreeToggle<CR> " Map NERDTREE to ctr
-let NERDTreeShowHidden=1.     " Show hidden files in NERDTree
+autocmd vimenter * NERDTree               " Autoload NERDTREE with vim
+autocmd VimEnter * wincmd p               " Curser start on file
+map <C-n> :NERDTreeToggle<CR>             " Map NERDTREE to ctr
+let NERDTreeShowHidden=1.                 " Show hidden files in NERDTree
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 
 " Close NERDTREE when the last editor closes
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
