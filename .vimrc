@@ -19,10 +19,11 @@ set termguicolors                         " iterm2 color
 syntax on
 colorscheme sublimemonokai
 
-set number                                " numbers to the left
-set expandtab ts=4 sw=4 ai                " tab spaces
-set cursorline                            " highlights current line and number
-set spelllang=en                          " spell check
+set number                                " Numbers to the left
+set cursorline                            " Highlights current line and number
+set expandtab ts=4 sw=4 ai                " Tab spaces
+set spelllang=en                          " Spell check
+set backspace=2                           " Backspace equals to indent,eol,start
 
 " test
 set smarttab
