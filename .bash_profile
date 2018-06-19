@@ -37,6 +37,3 @@ alias gitFinish='f(){ git add . && git commit -m "$@" && git push; unset -f f; }
 
 # gives iterm 2 an arrow
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
-# reminder 
-# chsh                                        #Change shell /bin/zsh ||  /bin/bash
