@@ -1,0 +1,8 @@
+Help Full Terminal Commands
+
+# Find and terminate EADDRINUSE (error address in use)
+ps aux | grep -i node                         # Find node process
+kill [PID#]                                   # End the node process
+
+# Change shell
+chsh                                        #Change shell /bin/zsh ||  /bin/bash
