@@ -24,3 +24,10 @@ ctrl-w =         - make all equal size
 :sview file      - same as split, but readonly
 :close           - close current window
 ```
+
+### Run shell commands inside Vim
+```
+:!ls
+:!node server.js
+:!man grep
+```
