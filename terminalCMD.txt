@@ -4,6 +4,10 @@ Help Full Terminal Commands
 ps aux | grep -i node                         # Find node process
 kill [PID#]                                   # End the node process
 
+rm -r my-dir                                  # Remove recursively a directory and its childern
+rm -rf my-dir                                 # Remove prompt for approval, forced
+rmdir                                         # Can only remove empty directories 
+
 # Change shell
 chsh                                        #Change shell /bin/zsh ||  /bin/bash
 
@@ -42,8 +46,6 @@ $: printenv
    * ncftp --- especially good for downloading files via anonymous ftp.
    * print --- custom print command (see also lpr )
    * pwd --- find out what directory you are in
-   * rm --- remove a file
-   * rmdir --- remove directory
    * route --- add and delete network routes, and gateways
    * rsh --- remote shell
    * setenv --- set an environment variable
