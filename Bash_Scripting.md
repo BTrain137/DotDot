@@ -2,12 +2,12 @@
 
 [Article](http://www.compciv.org/recipes/cli/reusable-shell-scripts/)
 
-### Project Goals
+#### Project Goals
 ```
 Allow users to import custom .vimrc and/or .bashrc into non-local environment such as 
 Stage or Production with the least amount of CMDs required in the terminal
 ```
-### TODO
+#### TODO
 ```
 Create github shell script
 Allow users to curl URL
@@ -16,7 +16,7 @@ Instruct user to execute CMDs
 
 ## Test Run
 
-### Creating Bash Script
+#### Creating Bash Script
 ```
 vim shakespeare_shell_script.sh
 ```
@@ -59,8 +59,10 @@ cat "./shakespeare-plays-flat-text/$1.txt" | \
   sort | uniq -c | \
   sort -rn | head -n 10
 ```
+Save and quit
 
-### Run CMD
+#### Shell Commands
+Run one of the following CMDs
 ```
 bash shakespeare_shell_script.sh othello 5 7
 bash shakespeare_shell_script.sh romeo_juliet 5 7
