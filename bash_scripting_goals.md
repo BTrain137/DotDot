@@ -7,8 +7,20 @@
 Allow users to import custom .vimrc and/or .bashrc into non-local environment such as 
 Stage or Production with the least amount of CMDs required in the terminal
 ```
+### TODO
+```
+Create github shell script
+Allow users to curl URL
+Instruct user to execute CMDs 
+```
+
+## Test Run
 
 ### Creating Bash Script
+```
+vim shakespeare_shell_script.sh
+```
+Copy the following code into the editor
 ```
 data_url='http://stash.compciv.org/scrapespeare/shakespeare-plays-flat-text.zip'
 data_subdir='./shakespeare-plays-flat-text'
@@ -50,13 +62,7 @@ cat "./shakespeare-plays-flat-text/$1.txt" | \
 
 ### Run CMD
 ```
-bash top-shake-words.sh othello 5 7
-bash top-shake-words.sh romeo_juliet 5 7
+bash shakespeare_shell_script.sh othello 5 7
+bash shakespeare_shell_script.sh romeo_juliet 5 7
 ```
-
-### TODO
-```
-Create github shell script
-Allow users to curl URL
-Instruct user to execute CMDs 
-```
+Some results should return
