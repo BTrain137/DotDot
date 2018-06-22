@@ -6,3 +6,50 @@ kill [PID#]                                   # End the node process
 
 # Change shell
 chsh                                        #Change shell /bin/zsh ||  /bin/bash
+
+
+
+# Terminal CMDS
+$: mkfile
+$: fopen
+$: top                      
+$: grep
+$: info
+$: man
+$: which
+$: whois
+$: builtin
+$: traceroute
+$: printenv
+
+
+   * cat --- for creating and displaying short files
+   * chmod --- change permissions
+   * cd --- change directory
+   * cp --- for copying files
+   * date --- display date
+   * df -- display free disk space
+   * du -- display disk usage statistics
+   * echo --- echo argument
+   * ftp --- connect to a remote machine to download or upload files
+   * grep --- search file
+   * head --- display first part of file
+   * ls --- see what files you have
+   * lpr --- standard print command (see also print )
+   * more --- use to read files
+   * mkdir --- create directory
+   * mv --- for moving and renaming files
+   * ncftp --- especially good for downloading files via anonymous ftp.
+   * print --- custom print command (see also lpr )
+   * pwd --- find out what directory you are in
+   * rm --- remove a file
+   * rmdir --- remove directory
+   * route --- add and delete network routes, and gateways
+   * rsh --- remote shell
+   * setenv --- set an environment variable
+   * sort --- sort file
+   * tail --- display last part of file
+   * tar --- create an archive, add or extract files
+   * telnet --- log in to another machine
+   * wc --- count characters, words, lines
+   * xfconfig --- used to configure your network
