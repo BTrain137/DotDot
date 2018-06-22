@@ -51,5 +51,6 @@ $: printenv
    * tail --- display last part of file
    * tar --- create an archive, add or extract files
    * telnet --- log in to another machine
+   * tr -- translate characters --
    * wc --- count characters, words, lines
    * xfconfig --- used to configure your network
