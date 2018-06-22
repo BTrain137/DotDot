@@ -2,7 +2,7 @@
 
 [Article](http://www.compciv.org/recipes/cli/reusable-shell-scripts/)
 
-#### <span style="style="color:red">Project Goals </span>
+<h2 style="style="color:red">Project Goals </h2>
 ```
 Allow users to import custom .vimrc and/or .bashrc into non-local environment such as 
 Stage or Production with the least amount of CMDs required in the terminal
