@@ -11,7 +11,10 @@ rmdir                                         # Can only remove empty directorie
 # Change shell
 chsh                                        #Change shell /bin/zsh ||  /bin/bash
 
-
+# list 
+cd ../..
+ll ./bin/
+ll ./usr/bin/
 
 # Terminal CMDS
 $: mkfile
