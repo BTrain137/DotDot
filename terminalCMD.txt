@@ -15,6 +15,7 @@ chsh                                        #Change shell /bin/zsh ||  /bin/bash
 cd ../..
 ll ./bin/
 ll ./usr/bin/
+ll ./usr/local/bin
 
 # Terminal CMDS
 $: mkfile
