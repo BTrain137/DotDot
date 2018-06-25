@@ -9,13 +9,13 @@ rm -rf my-dir                                 # Remove prompt for approval, forc
 rmdir                                         # Can only remove empty directories 
 
 # Change shell
-chsh                                        #Change shell /bin/zsh ||  /bin/bash
+chsh                                          #Change shell /bin/zsh ||  /bin/bash
 
 # list 
 cd ../..
-ll ./bin/
-ll ./usr/bin/
-ll ./usr/local/bin
+ll ./bin/                                     # Some CLI programs
+ll ./usr/bin/                                 # The rest of the CLI programs
+ll ./usr/local/bin                            # Links to major applications
 
 # Terminal CMDS
 $: mkfile
