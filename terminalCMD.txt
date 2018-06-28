@@ -19,8 +19,7 @@ ll ./usr/local/bin                            # Links to major applications
 
 # Terminal CMDS
 $: mkfile
-$: fopen
-$: top                      
+$: fopen                 
 $: grep
 $: info
 $: man
@@ -29,6 +28,10 @@ $: whois
 $: builtin
 $: traceroute
 $: printenv
+
+$: top --- list of all running processes 
+$: top -o cpu --- Sort top by CPU
+$: top -o rsize --- Sort top by memory usage
 
 
    * cat --- for creating and displaying short files
