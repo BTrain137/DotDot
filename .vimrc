@@ -19,11 +19,20 @@ set termguicolors                         " iterm2 color
 syntax on
 colorscheme sublimemonokai
 
-set number                                " Numbers to the left
-set cursorline                            " Highlights current line and number
 set expandtab ts=4 sw=4 ai                " Tab spaces
 set spelllang=en                          " Spell check
 set backspace=2                           " Backspace equals to indent,eol,start
+
+set number                                " Numbers to the left
+set relativenumber                        " Shows relative numbers from curser
+set cursorline                            " Highlights current line and number
+
+" Only gives relative number when on focus
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 " test
 set smarttab
