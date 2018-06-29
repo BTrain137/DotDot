@@ -22,6 +22,8 @@ colorscheme sublimemonokai
 set expandtab ts=4 sw=4 ai                " Tab spaces
 set spelllang=en                          " Spell check
 set backspace=2                           " Backspace equals to indent,eol,start
+inoremap ∆ <Esc>:m .+1<CR>==gi            " Move current line up in insert mode
+inoremap ˚ <Esc>:m .-2<CR>==gi            " Move current line down in insert mode
 
 set number                                " Numbers to the left
 set relativenumber                        " Shows relative numbers from curser
