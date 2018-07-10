@@ -17,23 +17,24 @@ alias ping="ping -c 10"                       # Get IP address or to see if a we
 alias who="whois"                             # find more info on the site 
 alias trace="traceroute"                      # network debug
 
-alias ll="ls -la"
+# Directory
+alias diskusage="df -h"
+alias folderusage="du -ch"
+alias totalfolderusage="du -sh"
+
+# bash variables
+alias wrap_args='f(){ echo before "$@" after;  unset -f f; }; f'
+alias playWord='f(){ echo before "$1" middle  "$2" after;  unset -f f; }; f'
+
+# Git
+alias gitLazy='f(){ git add . && git commit -a -m "$1" && git push -u origin "$2"; unset -f f; }; f'
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
 export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 
-# test functions to place arguments in bash
-myfunction () {
-    echo '$1'
-    echo '$1'
-}
-
-alias wrap_args='f(){ echo before "$@" after;  unset -f f; }; f'
-
-# all in one git command 
-# https://stackoverflow.com/questions/7131670/make-a-bash-alias-that-takes-a-parameter
-alias gitFinish='f(){ git add . && git commit -m "$@" && git push; unset -f f; }; f'
-
 # gives iterm 2 an arrow
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# reminder
+# chsh          :Change shell /bin/zsh ||  /bin/bash
