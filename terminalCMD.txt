@@ -11,6 +11,10 @@ rmdir                                         # Can only remove empty directorie
 # Change shell
 chsh                                          #Change shell /bin/zsh ||  /bin/bash
 
+# Copy to clipboard
+pbcopy < ~/.ssh/id_rsa.pub 
+pbcopy < ~/.bash_profile
+
 # list 
 cd ../..
 ll ./bin/                                     # Some CLI programs
