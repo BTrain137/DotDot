@@ -1,0 +1,12 @@
+"editor.lineNumbers": "relative",
+"vim.useSystemClipboard": true,
+"vim.normalModeKeyBindingsNonRecursive": [
+    {
+        "before": [":"],
+        "commands": [
+            {
+                "command": "vim.showQuickpickCmdLine",
+            }
+        ]
+    }
+],
