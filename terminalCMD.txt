@@ -67,3 +67,8 @@ $: top -o rsize --- Sort top by memory usage
    * tr -- translate characters --
    * wc --- count characters, words, lines
    * xfconfig --- used to configure your network
+
+git:
+
+-- To push code from a develop branch into a new repo's master or branch
+$ git push <anthoer repo> +currentBranch:otherReposBranch
