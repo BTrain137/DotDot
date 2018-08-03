@@ -21,6 +21,10 @@ ll ./bin/                                     # Some CLI programs
 ll ./usr/bin/                                 # The rest of the CLI programs
 ll ./usr/local/bin                            # Links to major applications
 
+# Find
+find ~/ -type d -name "my-directory-name"     # Find a directory
+find . -name "my-file.html" -print            # Find a file
+
 # Terminal CMDS
 $: mkfile
 $: fopen                 
