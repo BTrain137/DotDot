@@ -25,6 +25,11 @@ ll ./usr/local/bin                            # Links to major applications
 find ~/ -type d -name "my-directory-name"     # Find a directory
 find . -name "my-file.html" -print            # Find a file
 
+# Disk Usage
+du -sh "file_path"                            # Command estimates file_path space usage
+du -sch "file_path"                           # Check more than one directory and see the total
+
+
 # Terminal CMDS
 $: mkfile
 $: fopen                 
