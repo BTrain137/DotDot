@@ -17,6 +17,8 @@ alias ping="ping -c 10"                       # Get IP address or to see if a we
 alias who="whois"                             # find more info on the site 
 alias trace="traceroute"                      # network debug
 
+alias please='sudo $(fc -ln -1)'.             # Repeats last CMD with Sudo
+
 # Directory
 alias diskusage="df -h"
 alias folderusage="du -ch"
@@ -32,6 +34,9 @@ alias gitLazy='f(){ git add . && git commit -a -m "$1" && git push -u origin "$2
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
 export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+
+# TODO create bash script to grab new alias from github
+alias bashMe='curl'
 
 # gives iterm 2 an arrow
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
