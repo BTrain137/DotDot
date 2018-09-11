@@ -35,8 +35,11 @@ alias gitLazy='f(){ git add . && git commit -a -m "$1" && git push -u origin "$2
 # The original version is saved in .bash_profile.pysave
 export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 
-# Pull down latest bash script from github
-alias bashMe='curl https://raw.githubusercontent.com/bryan89tran/DotDot/master/.bashrc --output .bashrc; mv .bashrc ~/ ; source ~/.bashrc'
+# Pull down latest bashrc script from github
+alias bashRC='curl https://raw.githubusercontent.com/bryan89tran/DotDot/master/.bashrc --output .bashrc; mv .bashrc ~/ ; source ~/.bashrc'
+
+# Pull down latest bash_profile script from github
+alias bashProfile='curl https://raw.githubusercontent.com/bryan89tran/DotDot/master/.bash_profile --output .bash_profile; mv .bash_profile ~/ ; source ~/.bash_profile'
 
 # gives iterm 2 an arrow
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
