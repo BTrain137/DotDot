@@ -17,7 +17,7 @@ alias ping="ping -c 10"                       # Get IP address or to see if a we
 alias who="whois"                             # find more info on the site 
 alias trace="traceroute"                      # network debug
 
-alias please='sudo $(fc -ln -1)'.             # Repeats last CMD with Sudo
+alias please='sudo $(fc -ln -1)'              # Repeats last CMD with Sudo
 
 alias portKill='kill $(lsof -t -i:$1)'        # Find port number and kill process
 
