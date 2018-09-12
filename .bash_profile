@@ -19,6 +19,8 @@ alias trace="traceroute"                      # network debug
 
 alias please='sudo $(fc -ln -1)'.             # Repeats last CMD with Sudo
 
+alias portKill='kill $(lsof -t -i:$1)'        # Find port number and kill process
+
 # Directory
 alias diskusage="df -h"
 alias folderusage="du -ch"
