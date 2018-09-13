@@ -29,6 +29,8 @@ find . -name "my-file.html" -print            # Find a file
 du -sh "file_path"                            # Command estimates file_path space usage
 du -sch "file_path"                           # Check more than one directory and see the total
 
+# Hub pull request for git
+hub pull-request -b dev -m "My-Message" -r zrmfoss
 
 # Terminal CMDS
 $: mkfile
