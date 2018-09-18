@@ -32,6 +32,9 @@ du -sch "file_path"                           # Check more than one directory an
 # Hub pull request for git
 hub pull-request -b dev -m "My-Message" -r zrmfoss
 
+# Allow MACs to repeat the same key strokes
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
 # Terminal CMDS
 $: mkfile
 $: fopen                 
