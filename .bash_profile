@@ -42,7 +42,7 @@ alias bashRC='curl https://raw.githubusercontent.com/bryan89tran/DotDot/master/.
 alias bashProfile='curl https://raw.githubusercontent.com/bryan89tran/DotDot/master/.bash_profile --output .bash_profile; mv .bash_profile ~/ ; source ~/.bash_profile'
 
 # Pull Request
-alias pullHelp='echo \nhub pull-request -b dev -r zrmfoss -m "Messages you want"'
+alias pullHelp='echo \n hub pull-request -b dev -r zrmfoss -m \"Messages you want\"'
 
 # gives iterm 2 an arrow
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
