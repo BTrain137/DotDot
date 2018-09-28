@@ -32,6 +32,8 @@ alias playWord='f(){ echo before "$1" middle  "$2" after;  unset -f f; }; f'
 
 # Git
 alias gitLazy='f(){ git add . && git commit -a -m "$1" && git push -u origin "$2"; unset -f f; }; f'
+alias gitDenied='ssh-add -K ~/.ssh/id_rsa_github_zymoreseaerch && ssh -vT git@github.com'
+
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
