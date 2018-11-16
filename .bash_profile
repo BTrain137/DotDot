@@ -51,5 +51,8 @@ alias pullHelp='echo hub pull-request -b dev -r zrmfoss -m \"Messages you want\"
 # gives iterm 2 an arrow
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+# Youtube Songs
+alias downloadmp3="youtube-dl --extract-audio --audio-format mp3"
+
 # reminder
 # chsh          :Change shell /bin/zsh ||  /bin/bash
