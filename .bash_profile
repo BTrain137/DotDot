@@ -1,3 +1,7 @@
+# Color on the terminal
+export PS1='\[\033[01;33m\]\h\[\033[01;37m\]:\[\033[01;34m\]\w\[\033[00m\] \n| => '
+export PS2="| => "
+
 alias ll='ls -la'                             # Detailed list with hidden files
 alias lt='ls -la -t'                          # Detailed list ordered by created
 alias lrt='ls -la -rt'                        # Detailed list ordered by created (reverse)
