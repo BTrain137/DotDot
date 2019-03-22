@@ -15,6 +15,14 @@ chsh                                          #Change shell /bin/zsh ||  /bin/ba
 pbcopy < ~/.ssh/id_rsa.pub 
 pbcopy < ~/.bash_profile
 
+# Git help
+git log --pretty=oneline --abbrev-commit      # Show git commits 
+git rebase -i HEAD~1                          # rebase and remove commit
+git reset HEAD~                               # Remove last commit
+
+# Hub pull request for git
+hub pull-request -b dev -m "My-Message" -r zrmfoss
+
 # list 
 cd ../..
 ll ./bin/                                     # Some CLI programs
@@ -28,9 +36,6 @@ find . -name "my-file.html" -print            # Find a file
 # Disk Usage
 du -sh "file_path"                            # Command estimates file_path space usage
 du -sch "file_path"                           # Check more than one directory and see the total
-
-# Hub pull request for git
-hub pull-request -b dev -m "My-Message" -r zrmfoss
 
 # Allow MACs to repeat the same key strokes
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
