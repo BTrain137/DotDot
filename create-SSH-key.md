@@ -10,15 +10,13 @@
 $ cd ~/
 $ ssh-keygen -t rsa
 
-# A prompt will appear and ask. $USER is the user logged in to the machine
-Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/<$USER>/.ssh/id_rsa):
 ```
 
-### Do not accept, Type in the name of service the key will be associated to with. 
+### Naming convention, type in the name of service the key will be associated to with. 
 <service> is the variable in which you want to associate to such as _github or _AWS-production-site
 
 ```bash
+Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/<$USER>/.ssh/id_rsa): /Users/<$USER>/.ssh/id_rsa_<service>
 ```
 
@@ -44,6 +42,7 @@ $ pbcopy < ~/.ssh/id_rsa_<service>.pub
 ### Add the SSH key to the machine
 
 ```bash
+$ eval `ssh-agent -s`
 $ ssh-add ~/.ssh/id_rsa_<service>
 ```
 
