@@ -1,0 +1,16 @@
+# ~/.ssh/config
+
+# Work machine is default
+Host github.com
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_github_zymoreseaerch
+
+# Personal account
+Host github.com-personal
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_personal_github
+
+# Example to clone personal 
+# git clone git@github.com-personal:bryan89tran/ideal-octo-couscous.git
