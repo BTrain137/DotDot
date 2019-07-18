@@ -21,4 +21,6 @@ $ git log --oneline --graph --all --decorate
 $ git log --oneline --graph
 $ git log --stat --summary
 $ git diff --stat --summary cc2e2d2..HEAD
+$ git show cc2e2d2 HEAD 
+$ git show cc2e2d2 HEAD index.html
 ```
