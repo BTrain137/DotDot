@@ -24,3 +24,10 @@ $ git diff --stat --summary cc2e2d2..HEAD
 $ git show cc2e2d2 HEAD 
 $ git show cc2e2d2 HEAD index.html
 ```
+
+```
+$ git branch --merge
+# matches the other branchs that are contained in it so be deleted. 
+# If I am on the master and run the CMD then it shows me the other branches that I can delete 
+# because the master contains all the code within that branch
+```
