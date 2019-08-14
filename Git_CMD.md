@@ -31,3 +31,8 @@ $ git branch --merge
 # If I am on the master and run the CMD then it shows me the other branches that I can delete 
 # because the master contains all the code within that branch
 ```
+
+```
+$ git log --graph --decorate --oneline --all ^master^!
+# View the master branch and all the branches relative to it
+```
