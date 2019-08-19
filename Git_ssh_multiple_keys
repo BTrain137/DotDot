@@ -14,3 +14,11 @@ Host github.com-personal
 
 # Example to clone personal 
 # git clone git@github.com-personal:bryan89tran/ideal-octo-couscous.git
+
+# Visual Studio Team services
+Host vs-ssh.visualstudio.com
+  HostName vs-ssh.visualstudio.com # Must include sub domain
+  User btran # Sign in username
+  IdentityFile ~/.ssh/id_rsa_visualstudio_team
+
+# git clone btran@vs-ssh.visualstudio.com:v3/zymoresearch/Web_Apps/internal_ordering
