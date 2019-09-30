@@ -1,0 +1,30 @@
+{
+	"Create React Class": {
+		"scope": "javascript,typescript,javascriptreact",
+		"prefix": "reactClass",
+		"body": [
+			"import React, { Component } from 'react'",
+      "",
+      "class $1 extends Component {",
+      "  constructor(props) {",
+      "    super(props)",
+      "",
+      "    this.state = {",
+      "      $3",
+      "    }",
+      "  }",
+      "",
+      "  render(){",
+      "    return (",
+      "      <>",
+      "      </>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default $2;",
+			""
+		],
+		"description": "Create React Bolier"
+	}
+}
