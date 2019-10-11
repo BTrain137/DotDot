@@ -1,5 +1,5 @@
 "editor.lineNumbers": "relative",
-"vim.useSystemClipboard": true,
+"vim.useSystemClipboard": false,
 "vim.normalModeKeyBindingsNonRecursive": [
     {
         "before": [":"],
