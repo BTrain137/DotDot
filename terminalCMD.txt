@@ -11,6 +11,9 @@ rmdir                                         # Can only remove empty directorie
 # Change shell
 chsh                                          #Change shell /bin/zsh ||  /bin/bash
 
+# Change ownership of file
+sudo chown $(whoami) ~/.ssh/
+
 # Copy to clipboard
 pbcopy < ~/.ssh/id_rsa.pub 
 pbcopy < ~/.bash_profile
