@@ -1,18 +1,18 @@
 {
   // Must Run Client in a regular terminal. Then Launch both debugger. 
-  "version": "1.0.1",
+  "version": "1.2.0",
   "configurations": [
     {
+      "name": "Client",
       "type": "chrome",
       "request": "launch",
-      "name": "Client",
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}/client"
     },
     {
+      "name": "Server",
       "type": "node",
       "request": "launch",
-      "name": "Server",
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/nodemon",
       "runtimeArgs": [
@@ -28,7 +28,6 @@
       "sourceMaps": true,
       "showAsyncStacks": true,
       "console": "internalConsole",
-      "internalConsoleOptions": "neverOpen",
       "env": {
         "BABEL_ENV": "development"
       },
