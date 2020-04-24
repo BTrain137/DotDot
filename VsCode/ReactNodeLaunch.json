@@ -1,0 +1,38 @@
+{
+  // Must Run Client in a regular terminal. Then Launch both debugger. 
+  "version": "1.0.1",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Client",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/client"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Server",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/nodemon",
+      "runtimeArgs": [
+        "--exec",
+        "${workspaceFolder}/node_modules/.bin/babel-node",
+        "-e",
+        "js"
+      ],
+      "program": "${workspaceFolder}/api/src/index.js",
+      "restart": true,
+      "protocol": "inspector",
+      "stopOnEntry": false,
+      "sourceMaps": true,
+      "showAsyncStacks": true,
+      "console": "internalConsole",
+      "internalConsoleOptions": "neverOpen",
+      "env": {
+        "BABEL_ENV": "development"
+      },
+      "envFile": "${workspaceFolder}/api/.env.development"
+    }
+  ]
+}
