@@ -24,6 +24,9 @@ git log --pretty=oneline --abbrev-commit      # Show git commits
 git rebase -i HEAD~1                          # rebase and remove commit
 git reset HEAD~                               # Remove last commit
 
+git ls-files | xargs cat | wc -l                           # All lines within a repo
+git diff --shortstat `git hash-object -t tree /dev/null`   # All lines inserted
+
 # Hub pull request for git
 hub pull-request -b dev -m "My-Message" -r zrmfoss
 
