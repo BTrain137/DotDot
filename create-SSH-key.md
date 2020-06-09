@@ -46,5 +46,12 @@ $ eval `ssh-agent -s`
 $ ssh-add ~/.ssh/id_rsa_<service>
 ```
 
+### Add keys into remote server
+
+```bash
+$ ssh-copy-id user@host
+```
+
 ## TODO
-- Complex keys for AWS or digital ocean
+- <strike>Put keys into remote server </strike>.
+- Create bash script
