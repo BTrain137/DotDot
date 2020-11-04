@@ -3,7 +3,7 @@ Help Full Terminal Commands
 # Find and terminate EADDRINUSE (error address in use)
 ps aux | grep -i node                         # Find node process
 kill [PID#]                                   # End the node process
-lsof -P | grep ':3001' | awk '{print $2}' | xargs kill -9           #Find PORT `3001` and kill
+lsof -i :3001 | awk '{print $2}' | xargs | awk '{print $2}' | xargs kill -9           #Find PORT `3001` and kill
 
 rm -r my-dir                                  # Remove recursively a directory and its childern
 rm -rf my-dir                                 # Remove prompt for approval, forced
