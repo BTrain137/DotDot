@@ -37,7 +37,21 @@ $ git log --graph --decorate --oneline --all ^master^!
 # View the master branch and all the branches relative to it
 ```
 
+Resets
+```
+git log --pretty=oneline --abbrev-commit      # Show git commits 
+git rebase -i HEAD~1                          # rebase and remove commit
+git reset HEAD~                               # Remove last commit
+```
+
+Pushing Repos
 ```
 $ git push <anthoer repo> +currentBranch:otherReposBranch
 # To push code from a develop branch into a new repo's master or branch
+```
+
+Showing lines
+```
+git ls-files | xargs cat | wc -l                           # All lines within a repo
+git diff --shortstat `git hash-object -t tree /dev/null`   # All lines inserted
 ```
