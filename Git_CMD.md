@@ -36,3 +36,8 @@ $ git branch --merge
 $ git log --graph --decorate --oneline --all ^master^!
 # View the master branch and all the branches relative to it
 ```
+
+```
+$ git push <anthoer repo> +currentBranch:otherReposBranch
+# To push code from a develop branch into a new repo's master or branch
+```
