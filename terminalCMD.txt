@@ -19,14 +19,6 @@ sudo chown $(whoami) ~/.ssh/
 pbcopy < ~/.ssh/id_rsa.pub 
 pbcopy < ~/.bash_profile
 
-# Git help
-git log --pretty=oneline --abbrev-commit      # Show git commits 
-git rebase -i HEAD~1                          # rebase and remove commit
-git reset HEAD~                               # Remove last commit
-
-git ls-files | xargs cat | wc -l                           # All lines within a repo
-git diff --shortstat `git hash-object -t tree /dev/null`   # All lines inserted
-
 # Hub pull request for git
 hub pull-request -b dev -m "My-Message" -r zrmfoss
 
@@ -93,8 +85,3 @@ $: top -o rsize --- Sort top by memory usage
    * tr -- translate characters --
    * wc --- count characters, words, lines
    * xfconfig --- used to configure your network
-
-git:
-
--- To push code from a develop branch into a new repo's master or branch
-$ git push <anthoer repo> +currentBranch:otherReposBranch
