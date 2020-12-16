@@ -52,6 +52,7 @@ $ git push <anthoer repo> +currentBranch:otherReposBranch
 
 Showing lines
 ```
+git ls-files | xargs wc -l
 git ls-files | xargs cat | wc -l                           # All lines within a repo
 git diff --shortstat `git hash-object -t tree /dev/null`   # All lines inserted
 ```
