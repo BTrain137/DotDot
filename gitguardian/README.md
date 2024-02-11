@@ -3,7 +3,13 @@
 Local `gitguardian` is intended to prevent accidental keys from being deployed a remote remote.
 Pre-commit is used to block commits with keys even before `git push`
 
-## Setup: WARNING!!! This installation guide uses brew
+## Setup new repos (cloned and init):
+
+WARNING!!! This installation guide uses brew
+
+Requirements: 
+  - Mac OS
+  - Homebrew
 
 ### #1 Sign up:
 Sign up for [gitguardian.com](https://dashboard.gitguardian.com/auth/signup)
@@ -73,4 +79,18 @@ No secrets have been found
  2 files changed, 2 insertions(+)
  create mode 100644 index.html
  create mode 100644 ./javascript/index.js
+```
+
+## Setup existing repos:
+
+It is assumed you followed all the steps for the new setup.
+This script is to add the pre-commit for all .git projects within a directory.
+
+Warning the `path` is absolute path from the `root` directory and <b>NOT</b> the home directory
+
+```bash
+$ base 02-add_pre_commit_hooks.sh
+
+Enter the path to your parent directory: 
+~/Users/<USER>/my_code
 ```
