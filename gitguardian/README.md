@@ -84,7 +84,7 @@ No secrets have been found
 ## Setup existing repos:
 
 It is assumed you followed all the steps for the new setup.
-This script is to add the pre-commit for all .git projects within a directory.
+This script is to add the pre-commit for all .git projects within a parent directory.
 
 Warning the `path` is absolute path from the `root` directory and <b>NOT</b> the home directory
 
