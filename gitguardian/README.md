@@ -1,12 +1,30 @@
-# Setup local gitguardian
+# BASIC Setup local gitguardian
 
 Local `gitguardian` is intended to prevent accidental keys from being deployed a remote remote.
 Pre-commit is used to block commits with keys even before `git push`
 
-For full automation use [0full_ggshield_setup.sh](./01-full_ggshield_setup.sh).
+## Setup: WARNING!!! This installation guide uses brew
 
+### #1 Sign up:
+Sign up for [gitguardian.com](https://dashboard.gitguardian.com/auth/signup)
 
-### What it looks like when you accidentally commit a secret
+### #2 Clone repo and setup `ggshield`:
+```bash
+$ git clone repo
+$ cd <DIRECTORY>/DOTDOT/gitguardian
+$ bash 01-full_ggshield_setup.sh
+```
+
+### #3 Authenticate local `ggshield`:
+```bash
+$ ggshield auth login
+```
+
+### #4 Code safely!
+
+Once you setup pre-commits with `ggshield` every repo will now have automatic secret detection
+
+#### What it looks like when you accidentally commit a secret
 ```
 ➜  secret-shield-project git:(main) ✗ git add .                       
 ➜  secret-shield-project git:(main) ✗ git commit -m "OOPS I forgot a secret"
@@ -42,7 +60,8 @@ Scanning... ━━━━━━━━━━━━━━━━━━━━━━�
 ➜  secret-shield-project git:(main) ✗ 
 ```
 
-### Normal commits
+###  Normal commits
+
 ```
 ➜  secret-shield-project git:(main) ✗ git add .
 ➜  secret-shield-project git:(main) ✗ git commit -m "init project"
