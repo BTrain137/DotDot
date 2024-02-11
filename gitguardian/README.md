@@ -21,6 +21,8 @@ $ cd <DIRECTORY>/DOTDOT/gitguardian
 $ bash 01-full_ggshield_setup.sh
 ```
 
+Checkout the content of the file [01-full_ggshield_setup.sh](./01-full_ggshield_setup.sh)
+
 ### #3 Authenticate local `ggshield`:
 ```bash
 $ ggshield auth login
@@ -92,6 +94,8 @@ Warning the `path` is absolute path from the `root` directory and <b>NOT</b> the
 $ base 02-add_pre_commit_hooks.sh
 ```
 
+Checkout the content of the file [02-add_pre_commit_hooks.sh](./02-add_pre_commit_hooks.sh)
+
 ```bash
 Enter the path to your parent directory: 
 ~/Users/<USER>/my_code
@@ -100,6 +104,5 @@ Enter the path to your parent directory:
 Added pre-commit hook to ~/Users/<USER>/my_code/awesome_project/.git
 
 # Skipping repos with pre-commit already setup
-# We don't want to overwrite existing pre-commit scripts we will be skipping
 Existing pre-commit hook found in ~/Users/<USER>/my_code/pre_commit_setup/.git Skipping...
 ```
