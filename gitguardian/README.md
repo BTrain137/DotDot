@@ -90,7 +90,14 @@ Warning the `path` is absolute path from the `root` directory and <b>NOT</b> the
 
 ```bash
 $ base 02-add_pre_commit_hooks.sh
+```
 
+```bash
 Enter the path to your parent directory: 
 ~/Users/<USER>/my_code
+
+Enter the path to your parent directory: ~/Users/<USER>/my_code
+Added pre-commit hook to ~/Users/<USER>/my_code/awesome_project/.git
+# We don't want to overwrite existing pre-commit scripts we will be skipping
+Existing pre-commit hook found in ~/Users/<USER>/my_code/pre_commit_setup/.git Skipping...
 ```
