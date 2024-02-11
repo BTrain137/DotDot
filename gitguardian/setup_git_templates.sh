@@ -34,4 +34,5 @@ chmod +x "${GIT_TEMPLATES_DIR}/hooks/pre-commit"
 git config --global init.templateDir "${GIT_TEMPLATES_DIR}"
 
 echo "Git templates directory set up successfully."
-echo "All new repositories will now use this template and include the ggshield pre-commit hook."
+echo "All NEW repositories will now use this template and include the ggshield pre-commit hook."
+echo "To apply this template to EXISTING repositories, please see 'setup_ggshield_existing_repo.sh'"
