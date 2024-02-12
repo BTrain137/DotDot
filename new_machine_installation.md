@@ -31,3 +31,15 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/m
 ```
 
 TODO: Need to figure out correct vimrc
+
+### Git
+
+```bash
+$ brew install git
+```
+
+Follow [create-SSH-key.md](./create-SSH-key.md) to add keys
+
+### Git Guardian 
+
+Add [git guardian](./gitguardian/01-full_ggshield_setup.sh) 
