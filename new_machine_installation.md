@@ -2,6 +2,7 @@
 
 Mac > Settings > Trackpad > "Tap to click"
 Mac > Settings > Keyboard > Key Board Shortcut > Modifier Keys > Cap lock Key => Escape
+Mac > Settings > Keyboard > Delay until repeat > Shortest possible
 
 Manually Install [iterm2](https://iterm2.com/)
 
