@@ -43,3 +43,11 @@ Follow [create-SSH-key.md](./create-SSH-key.md) to add keys
 ### Git Guardian 
 
 Add [git guardian](./gitguardian/01-full_ggshield_setup.sh) 
+
+### Install VS Code
+
+```
+$ brew install --cask visual-studio-code
+```
+
+Sign into github to sync settings.
