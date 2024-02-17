@@ -6,6 +6,9 @@ Mac > Settings > Keyboard > Key Board Shortcut > Modifier Keys > Cap lock Key =>
 
 Mac > Settings > Keyboard > Delay until repeat > Shortest possible
 
+Mac > Settings > Keyboard > Key repeat rate > Shortest possible
+
+
 Manually Install [iterm2](https://iterm2.com/)
 
 iterm 2 settings:
@@ -15,8 +18,6 @@ Settings > Window > Width > 30
 Settings > Text > Font > Size > 16
 
 Mac > Settings > Privacy & Security > Files and Folders > iterm > Documents Folder
-
-
 
 Open terminal
 ```bash
