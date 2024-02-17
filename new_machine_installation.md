@@ -12,10 +12,10 @@ Mac > Settings > Keyboard > Key repeat rate > Shortest possible
 Manually Install [iterm2](https://iterm2.com/)
 
 iterm 2 settings:
-Settings > profile > terminal > "Unlimted scroll back"
-Settings > Window > Columns > 160
-Settings > Window > Width > 30
-Settings > Text > Font > Size > 16
+Settings > profile > terminal > "Unlimted scroll back" <br>
+Settings > Window > Columns > 160 <br>
+Settings > Window > Width > 30 <br>
+Settings > Text > Font > Size > 16 <br>
 
 Mac > Settings > Privacy & Security > Files and Folders > iterm > Documents Folder
 
