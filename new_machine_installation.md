@@ -59,5 +59,22 @@ Sign into github to sync settings.
 ### Install NVM for node and npm
 
 ```bash
-brew install nvm
+$ brew install nvm
+$ mkdir ~/.nvm
+$ nvm install node
+```
+
+### Other development requirements
+```bash
+$ brew install postgresql
+$ brew install redis
+```
+
+### Create postgresql local user
+```bash
+$ psql -h localhost -d postgres
+
+# In postgres CLI
+CREATE USER btrain --no-password;
+ALTER USER btrain WITH CREATEDB;
 ```
