@@ -91,7 +91,7 @@ This script is to add the pre-commit for all .git projects within a parent direc
 Warning the `path` is absolute path from the `root` directory and <b>NOT</b> the home directory
 
 ```bash
-$ base 02-add_pre_commit_hooks.sh
+$ bash 02-add_pre_commit_hooks.sh
 ```
 
 Checkout the content of the file [02-add_pre_commit_hooks.sh](./02-add_pre_commit_hooks.sh)
