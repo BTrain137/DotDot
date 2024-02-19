@@ -44,6 +44,17 @@ $ brew install git
 
 Follow [create-SSH-key.md](./create-SSH-key.md) to add keys
 
+#### Add github to config
+```
+# ~/.ssh/config
+
+# Default github account
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_github
+```
+
 ### Git Guardian 
 
 Add [git guardian](./gitguardian/01-full_ggshield_setup.sh) 
