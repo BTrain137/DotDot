@@ -65,6 +65,12 @@ Add [git guardian](./gitguardian/01-full_ggshield_setup.sh)
 $ brew install --cask visual-studio-code
 ```
 
+### Install ngrok
+```bash
+$ brew install ngrok/ngrok/ngrok
+# Then go onto ngrok.com to get auth key
+```
+
 Sign into github to sync settings.
 
 ### Install NVM for node and npm
