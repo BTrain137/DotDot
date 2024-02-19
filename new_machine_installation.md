@@ -8,6 +8,9 @@ Mac > Settings > Keyboard > Delay until repeat > Shortest possible
 
 Mac > Settings > Keyboard > Key repeat rate > Shortest possible
 
+```bash
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+```
 
 Manually Install [iterm2](https://iterm2.com/)
 
@@ -52,3 +55,9 @@ $ brew install --cask visual-studio-code
 ```
 
 Sign into github to sync settings.
+
+### Install NVM for node and npm
+
+```bash
+brew install nvm
+```
