@@ -52,6 +52,15 @@ $ ssh-add ~/.ssh/id_rsa_<service>
 $ ssh-copy-id user@host
 ```
 
+Rerun `Add the SSH key to the machine`
+```bash
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
 ## TODO
 - <strike>Put keys into remote server </strike>.
 - Create bash script
