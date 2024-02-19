@@ -1,19 +1,19 @@
 # ~/.ssh/config
 
-# Work machine is default
+# Default github account
 Host github.com
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_github
+
+# Work github account
+Host github.com-work
 	HostName github.com
 	User git
 	IdentityFile ~/.ssh/id_rsa_github_zymoreseaerch
 
-# Personal account
-Host github.com-personal
-	HostName github.com
-	User git
-	IdentityFile ~/.ssh/id_rsa_personal_github
-
 # Example to clone personal 
-# git clone git@github.com-personal:bryan89tran/ideal-octo-couscous.git
+# git clone git@github.com-work:bryan89tran/ideal-octo-couscous.git
 
 # Visual Studio Team services
 Host vs-ssh.visualstudio.com
